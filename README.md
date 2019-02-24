@@ -18,5 +18,5 @@ const world = {
   "argentina": { army: "Red" },
 }
 
-getReinforcesCount("Blue", world); // Number of reinforces
+getReinforcesCount("Blue", world); // [Number of reinforces, Number of regions]
 ```

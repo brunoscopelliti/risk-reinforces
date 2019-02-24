@@ -4,7 +4,7 @@
  * @name getReinforcementCount
  * @param {String} army
  * @param {Object<String, Region>} world
- * @return {Number}
+ * @return {Number[]}
  */
 const getReinforcementCount =
   (army, world) => {
@@ -29,7 +29,7 @@ const getReinforcementCount =
 
     const armies = Math.floor(controlledRegion / 3);
 
-    return Math.max(armies, 1);
+    return [Math.max(armies, 1), controlledRegion];
   };
 
 module.exports = getReinforcementCount;

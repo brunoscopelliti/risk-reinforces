@@ -31,17 +31,19 @@ describe("reinforces assignment", () => {
     china: { army: "Blue" },
     congo: { army: "Blue" },
     egypt: { army: "Black" },
+    greenland: { army: "Green" },
     india: { army: "Blue" },
     indonesia: { army: "Black" },
     island: { army: "Blue" },
     madagascar: { army: "Blue" },
+    mongolia: { army: "Yellow" },
     japan: { army: "Red" },
     ontario: { army: "Red" },
     quebec: { army: "Red" },
     peru: { army: "Violet" },
     siberia: { army: "Black" },
     siam: { army: "Blue" },
-    ukraine: { army: "Black" },
+    ukraine: { army: "Yellow" },
     ural: { army: "Black" },
     venezuela: { army: "Blue" },
   };
@@ -49,36 +51,36 @@ describe("reinforces assignment", () => {
   it("receives at least 1 army, no matter what (Yellow)", () => {
     expect(
       getReinforcement("Yellow", smallWorld)
-    ).toBe(1);
+    ).toEqual([1, 2]);
   });
 
   it("receives at least 1 army, no matter what (Green)", () => {
     expect(
       getReinforcement("Green", smallWorld)
-    ).toBe(1);
+    ).toEqual([1, 1]);
   });
 
   it("receives 1 army each three controlled territory (Black)", () => {
     expect(
       getReinforcement("Black", smallWorld)
-    ).toBe(2);
+    ).toEqual([1, 5]);
   });
 
-  it("receives 1 army each three controlled (Black)", () => {
+  it("receives 1 army each three controlled (Blue)", () => {
     expect(
       getReinforcement("Blue", smallWorld)
-    ).toBe(3);
+    ).toEqual([3, 10]);
   });
 
   it("receives 1 army each three controlled (Red)", () => {
     expect(
       getReinforcement("Red", smallWorld)
-    ).toBe(1);
+    ).toEqual([1, 3]);
   });
 
   it("receives 1 army each three controlled (Violet)", () => {
     expect(
       getReinforcement("Violet", smallWorld)
-    ).toBe(1);
+    ).toEqual([1, 1]);
   });
 });
