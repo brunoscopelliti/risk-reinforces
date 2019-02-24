@@ -1,6 +1,6 @@
 {
-  "name": "risk-reiforces",
-  "version": "0.2.0",
+  "name": "risk-reinforces",
+  "version": "0.1.0",
   "description": "Computes the number of reinforces a player can have",
   "main": "index.js",
   "scripts": {
