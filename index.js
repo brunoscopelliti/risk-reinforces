@@ -1,5 +1,7 @@
 "use strict";
 
+const hasOwn = {}.hasOwnProperty;
+
 /**
  * @name getReinforcementCount
  * @param {String} army
@@ -19,7 +21,7 @@ const getReinforcementCount =
     let controlledRegion = 0;
 
     for (let countryName in world) {
-      if (world.hasOwnProperty(countryName)) {
+      if (hasOwn.call(world, countryName)) {
         const country = world[countryName];
         if (country.army === army) {
           controlledRegion += 1;
