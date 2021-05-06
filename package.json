@@ -1,6 +1,6 @@
 {
-  "name": "risk-reinforces",
-  "version": "0.1.2",
+  "name": "@riskgame/reinforces",
+  "version": "1.0.0",
   "description": "Computes the number of reinforces a player can have",
   "main": "index.js",
   "scripts": {
@@ -27,12 +27,8 @@
   },
   "homepage": "https://github.com/brunoscopelliti/risk-reinforces#readme",
   "devDependencies": {
-    "eslint": "5.14.1",
-    "eslint-config-bruno": "2.0.0",
-    "eslint-plugin-import": "2.16.0",
-    "eslint-plugin-node": "8.0.1",
-    "eslint-plugin-promise": "4.0.1",
-    "eslint-plugin-standard": "4.0.0",
-    "jest": "24.1.0"
+    "eslint": "7.25.0",
+    "eslint-config-bruno": "3.0.0",
+    "jest": "26.6.3"
   }
 }

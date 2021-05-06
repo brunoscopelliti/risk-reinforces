@@ -20,7 +20,7 @@ const getReinforcementCount =
 
     let controlledRegion = 0;
 
-    for (let countryName in world) {
+    for (const countryName in world) {
       if (hasOwn.call(world, countryName)) {
         const country = world[countryName];
         if (country.army === army) {
